@@ -1,0 +1,132 @@
+.include "nominal.jsim"
+.include "stdcell.jsim"
+.include "2dcheckoff_3ns.jsim"
+
+
+*MUX2 using NAND, INV
+.subckt nandmux2 s b a z
+Xnand1 a s ax nand2
+Xinv1 s invs inverter_2
+Xnand2 invs b xb nand2
+Xnand3 ax xb z nand2
+.ends
+
+*Buffer using INV
+.subckt invbuffer a z
+Xinv1 a xa inverter_2
+Xinv2 xa z inverter_2
+.ends
+
+*XOR2 using NAND, tpd = 0.09
+.subckt nandxor2 a b z
+Xnand1 a b c nand2
+Xnand2 a c d nand2
+Xnand3 c b e nand2
+Xnand4 d e z nand2
+.ends
+
+*AND2 using NAND and INV, tpd = 0.05
+.subckt nandand2 a b z
+Xnand1 a b c nand2
+Xinv c z inverter_2
+.ends
+
+*AND3 using NAND and INV, tpd = 0.07
+.subckt nandand3 a b c z
+Xnand1 a b c d nand3
+Xinv d z inverter_2
+.ends
+
+*OR2 using NAND and INV, tpd = 0.07
+.subckt nandor2 a b z
+Xinv1 a xa inverter_2
+Xinv2 b xb inverter_2
+Xnand1 xa xb z nand2
+.ends
+
+*OR4 using NAND and INV, tpd = 0.10
+.subckt nandor4 a b c d z
+Xinv1 a xa inverter_2
+Xinv2 b xb inverter_2
+Xinv3 c xc inverter_2
+Xinv4 d xd inverter_2
+Xnand1 xa xb xc xd z nand4
+.ends
+
+*Kogge-Stone Sub-modules
+.subckt KSmod2 a b c out
+Xaoi1 a b c d aoi21
+Xinv1 d out inverter_2
+.ends
+
+.subckt KSmod3 a b c d andout orout
+Xand1 a b andout nandand2
+Xaoi1 c b d e aoi21
+Xinv1 e orout inverter_2
+.ends
+
+*32-bit Kogge-Stone adder
+.subckt KSadder32bit a[31:0] b[31:0] cin s[31:0]
+*get all the propagate bits and generate bits
+Xp a[31:0] b[31:0] p[31:0] nandxor2
+Xg a[31:0] b[31:0] g[31:0] nandand2
+
+Xbuffer1 cin#2 cin[2:1] invbuffer
+
+*KSmod3
+Xsmod3.1 p[29:0] p[30:1] g[29:0] g[30:1] s1[31:2]andout s1[31:2]orout KSmod3
+Xsmod3.2 s1[29:2]andout s1[31:4]andout s1[29:2]orout s1[31:4]orout s2[31:4]andout s2[31:4]orout KSmod3
+Xsmod3.3 s2[27:4]andout s2[31:8]andout s2[27:4]orout s2[31:8]orout s3[31:8]andout s3[31:8]orout KSmod3
+Xsmod3.4 s3[23:8]andout s3[31:16]andout s3[23:8]orout s3[31:16]orout s4[31:16]andout s4[31:16]orout KSmod3
+
+*KSmod2
+*first case of KSmod2 at bit sum 1
+Xs1mod2 p0 cin[1] g0 s1left KSmod2
+
+*after 3.1
+Xs2mod2 s12andout cin[1] s12orout s2left KSmod2
+Xs3mod2 s13andout s1left s13orout s3left KSmod2
+
+*after 3.2
+Xs4mod2 s24andout cin[1] s24orout s4left KSmod2
+Xs5.7mod2 s2[7:5]andout s[3:1]left s2[7:5]orout s[7:5]left KSmod2
+
+*after 3.3
+Xs8mod2 s38andout cin[2] s38orout s8left KSmod2
+Xs9.15mod2 s3[15:9]andout s[7:1]left s3[15:9]orout s[15:9]left KSmod2
+
+*after 3.4
+Xs16mod2 s416andout cin[2] s416orout s16left KSmod2
+Xs17.31mod2 s4[31:17]andout s[15:1]left s4[31:17]orout s[31:17]left KSmod2
+
+*Sum bits 0, 1 - 31
+Xs0 p0 cin[2] s0 nandxor2
+Xs1.31 p[31:1] s[31:1]left s[31:1] nandxor2
+.ends
+
+*32-bit adder
+.subckt adder32 ALUFN[0] a[31:0] b[31:0] s[31:0] z v n
+Xbuffer0 ALUFN[0]#3 ALUFN0[2:0] invbuffer
+Xbuffer1 ALUFN0[1:0]#4 ALUFN2[7:0] invbuffer
+XxorgateAdder32 b[31:0] ALUFN2[7:0]#4 XB[31:0] nandxor2
+
+* 32-bit Kogge Stone version - KSadder32bit a[31:0] b[31:0] cin s[31:0]
+Xadder0 a[31:0] XB[31:0] ALUFN0[2] s[31:0] KSadder32bit
+
+* Z output
+Xlayer1 s[31:24] s[23:16] s[15:8] s[7:0] layer1[7:0] nandor4
+Xlayer2 layer1[7:6] layer1[5:4] layer1[3:2] layer1[1:0] layer2[1:0] nandor4
+Xlayer3 layer2[1] layer2[0] nz nandor2
+Xinv nz z inverter_2
+
+* V output
+Xinv1 s31 invs31 inverter_2
+Xinv2 a31 inva31 inverter_2
+Xinv3 xb31 invxb31 inverter_2
+Xand1 a31 xb31 invs31 v1 nandand3
+Xand2 inva31 invxb31 s31 v2 nandand3
+Xor1 v1 v2 v nandor2
+
+* N output
+.connect n s31
+.ends

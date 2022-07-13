@@ -1,0 +1,650 @@
+BC1.1
+XB0 := ODD(B0, ALUFN0);
+S0 := ODD(ALUFN0, A0, XB0);
+C1 := OR(AND(A0, XB0), AND(ALUFN0, ODD(A0, XB0)));
+
+XB1 := ODD(B1, ALUFN0);
+S1 := ODD(C1, A1, XB1);
+C2 := OR(AND(A1, XB1), AND(C1, ODD(A1, XB1)));
+
+XB2 := ODD(B2, ALUFN0);
+S2 := ODD(C2, A2, XB2);
+C3 := OR(AND(A2, XB2), AND(C2, ODD(A2, XB2)));
+
+XB3 := ODD(B3, ALUFN0);
+S3 := ODD(C3, A3, XB3);
+C4 := OR(AND(A3, XB3), AND(C3, ODD(A3, XB3)));
+
+XB4 := ODD(B4, ALUFN0);
+S4 := ODD(C4, A4, XB4);
+C5 := OR(AND(A4, XB4), AND(C4, ODD(A4, XB4)));
+
+XB5 := ODD(B5, ALUFN0);
+S5 := ODD(C5, A5, XB5);
+C6 := OR(AND(A5, XB5), AND(C5, ODD(A5, XB5)));
+
+XB6 := ODD(B6, ALUFN0);
+S6 := ODD(C6, A6, XB6);
+C7 := OR(AND(A6, XB6), AND(C6, ODD(A6, XB6)));
+
+XB7 := ODD(B7, ALUFN0);
+S7 := ODD(C7, A7, XB7);
+C8 := OR(AND(A7, XB7), AND(C7, ODD(A7, XB7)));
+
+XB8 := ODD(B8, ALUFN0);
+S8 := ODD(C8, A8, XB8);
+C9 := OR(AND(A8, XB8), AND(C8, ODD(A8, XB8)));
+
+XB9 := ODD(B9, ALUFN0);
+S9 := ODD(C9, A9, XB9);
+C10 := OR(AND(A9, XB9), AND(C9, ODD(A9, XB9)));
+
+XB10 := ODD(B10, ALUFN0);
+S10 := ODD(C10, A10, XB10);
+C11 := OR(AND(A10, XB10), AND(C10, ODD(A10, XB10)));
+
+XB11 := ODD(B11, ALUFN0);
+S11 := ODD(C11, A11, XB11);
+C12 := OR(AND(A11, XB11), AND(C11, ODD(A11, XB11)));
+
+XB12 := ODD(B12, ALUFN0);
+S12 := ODD(C12, A12, XB12);
+C13 := OR(AND(A12, XB12), AND(C12, ODD(A12, XB12)));
+
+XB13 := ODD(B13, ALUFN0);
+S13 := ODD(C13, A13, XB13);
+C14 := OR(AND(A13, XB13), AND(C13, ODD(A13, XB13)));
+
+XB14 := ODD(B14, ALUFN0);
+S14 := ODD(C14, A14, XB14);
+C15 := OR(AND(A14, XB14), AND(C14, ODD(A14, XB14)));
+
+XB15 := ODD(B15, ALUFN0);
+S15 := ODD(C15, A15, XB15);
+C16 := OR(AND(A15, XB15), AND(C15, ODD(A15, XB15)));
+
+XB16 := ODD(B16, ALUFN0);
+S16 := ODD(C16, A16, XB16);
+C17 := OR(AND(A16, XB16), AND(C16, ODD(A16, XB16)));
+
+XB17 := ODD(B17, ALUFN0);
+S17 := ODD(C17, A17, XB17);
+C18 := OR(AND(A17, XB17), AND(C17, ODD(A17, XB17)));
+
+XB18 := ODD(B18, ALUFN0);
+S18 := ODD(C18, A18, XB18);
+C19 := OR(AND(A18, XB18), AND(C18, ODD(A18, XB18)));
+
+XB19 := ODD(B19, ALUFN0);
+S19 := ODD(C19, A19, XB19);
+C20 := OR(AND(A19, XB19), AND(C19, ODD(A19, XB19)));
+
+XB20 := ODD(B20, ALUFN0);
+S20 := ODD(C20, A20, XB20);
+C21 := OR(AND(A20, XB20), AND(C20, ODD(A20, XB20)));
+
+XB21 := ODD(B21, ALUFN0);
+S21 := ODD(C21, A21, XB21);
+C22 := OR(AND(A21, XB21), AND(C21, ODD(A21, XB21)));
+
+XB22 := ODD(B22, ALUFN0);
+S22 := ODD(C22, A22, XB22);
+C23 := OR(AND(A22, XB22), AND(C22, ODD(A22, XB22)));
+
+XB23 := ODD(B23, ALUFN0);
+S23 := ODD(C23, A23, XB23);
+C24 := OR(AND(A23, XB23), AND(C23, ODD(A23, XB23)));
+
+XB24 := ODD(B24, ALUFN0);
+S24 := ODD(C24, A24, XB24);
+C25 := OR(AND(A24, XB24), AND(C24, ODD(A24, XB24)));
+
+XB25 := ODD(B25, ALUFN0);
+S25 := ODD(C25, A25, XB25);
+C26 := OR(AND(A25, XB25), AND(C25, ODD(A25, XB25)));
+
+XB26 := ODD(B26, ALUFN0);
+S26 := ODD(C26, A26, XB26);
+C27 := OR(AND(A26, XB26), AND(C26, ODD(A26, XB26)));
+
+XB27 := ODD(B27, ALUFN0);
+S27 := ODD(C27, A27, XB27);
+C28 := OR(AND(A27, XB27), AND(C27, ODD(A27, XB27)));
+
+XB28 := ODD(B28, ALUFN0);
+S28 := ODD(C28, A28, XB28);
+C29 := OR(AND(A28, XB28), AND(C28, ODD(A28, XB28)));
+
+XB29 := ODD(B29, ALUFN0);
+S29 := ODD(C29, A29, XB29);
+C30 := OR(AND(A29, XB29), AND(C29, ODD(A29, XB29)));
+
+XB30 := ODD(B30, ALUFN0);
+S30 := ODD(C30, A30, XB30);
+C31 := OR(AND(A30, XB30), AND(C30, ODD(A30, XB30)));
+
+XB31 := ODD(B31, ALUFN0);
+S31 := ODD(C31, A31, XB31);
+C32 := OR(AND(A31, XB31), AND(C31, ODD(A31, XB31)));
+
+
+
+
+P0 := ODD(A0,XB0);
+G0 := AND(A0,XB0);
+
+P1 := ODD(A1,XB1);
+G1 := AND(A1,XB1);
+
+P2 := ODD(A2,XB2);
+G2 := AND(A2,XB2);
+
+P3 := ODD(A3,XB3);
+G3 := AND(A3,XB3);
+
+P4 := ODD(A4,XB4);
+G4 := AND(A4,XB4);
+
+P5 := ODD(A5,XB5);
+G5 := AND(A5,XB5);
+
+P6 := ODD(A6,XB6);
+G6 := AND(A6,XB6);
+
+P7 := ODD(A7,XB7);
+G7 := AND(A7,XB7);
+
+P8 := ODD(A8,XB8);
+G8 := AND(A8,XB8);
+
+P9 := ODD(A9,XB9);
+G9 := AND(A9,XB9);
+
+P10 := ODD(A10,XB10);
+G10 := AND(A10,XB10);
+
+P11 := ODD(A11,XB11);
+G11 := AND(A11,XB11);
+
+P12 := ODD(A12,XB12);
+G12 := AND(A12,XB12);
+
+P13 := ODD(A13,XB13);
+G13 := AND(A13,XB13);
+
+P14 := ODD(A14,XB14);
+G14 := AND(A14,XB14);
+
+P15 := ODD(A15,XB15);
+G15 := AND(A15,XB15);
+
+P16 := ODD(A16,XB16);
+G16 := AND(A16,XB16);
+
+P17 := ODD(A17,XB17);
+G17 := AND(A17,XB17);
+
+P18 := ODD(A18,XB18);
+G18 := AND(A18,XB18);
+
+P19 := ODD(A19,XB19);
+G19 := AND(A19,XB19);
+
+P20 := ODD(A20,XB20);
+G20 := AND(A20,XB20);
+
+P21 := ODD(A21,XB21);
+G21 := AND(A21,XB21);
+
+P22 := ODD(A22,XB22);
+G22 := AND(A22,XB22);
+
+P23 := ODD(A23,XB23);
+G23 := AND(A23,XB23);
+
+P24 := ODD(A24,XB24);
+G24 := AND(A24,XB24);
+
+P25 := ODD(A25,XB25);
+G25 := AND(A25,XB25);
+
+P26 := ODD(A26,XB26);
+G26 := AND(A26,XB26);
+
+P27 := ODD(A27,XB27);
+G27 := AND(A27,XB27);
+
+P28 := ODD(A28,XB28);
+G28 := AND(A28,XB28);
+
+P29 := ODD(A29,XB29);
+G29 := AND(A29,XB29);
+
+P30 := ODD(A30,XB30);
+G30 := AND(A30,XB30);
+
+P31 := ODD(A31,XB31);
+G31 := AND(A31,XB31);
+
+S1_0andout := AND(P1,P0);
+S1_0orout := OR(AND(G0,P1),G1);
+
+S1_1andout := AND(P2,P1);
+S1_1orout := OR(AND(G1,P2),G2);
+
+S1_2andout := AND(P3,P2);
+S1_2orout := OR(AND(G2,P3),G3);
+
+S1_3andout := AND(P4,P3);
+S1_3orout := OR(AND(G3,P4),G4);
+
+S1_4andout := AND(P5,P4);
+S1_4orout := OR(AND(G4,P5),G5);
+
+S1_5andout := AND(P6,P5);
+S1_5orout := OR(AND(G5,P6),G6);
+
+S1_6andout := AND(P7,P6);
+S1_6orout := OR(AND(G6,P7),G7);
+
+S1_7andout := AND(P8,P7);
+S1_7orout := OR(AND(G7,P8),G8);
+
+S1_8andout := AND(P9,P8);
+S1_8orout := OR(AND(G8,P9),G9);
+
+S1_9andout := AND(P10,P9);
+S1_9orout := OR(AND(G9,P10),G10);
+
+S1_10andout := AND(P11,P10);
+S1_10orout := OR(AND(G10,P11),G11);
+
+S1_11andout := AND(P12,P11);
+S1_11orout := OR(AND(G11,P12),G12);
+
+S1_12andout := AND(P13,P12);
+S1_12orout := OR(AND(G12,P13),G13);
+
+S1_13andout := AND(P14,P13);
+S1_13orout := OR(AND(G13,P14),G14);
+
+S1_14andout := AND(P15,P14);
+S1_14orout := OR(AND(G14,P15),G15);
+
+S1_15andout := AND(P16,P15);
+S1_15orout := OR(AND(G15,P16),G16);
+
+S1_16andout := AND(P17,P16);
+S1_16orout := OR(AND(G16,P17),G17);
+
+S1_17andout := AND(P18,P17);
+S1_17orout := OR(AND(G17,P18),G18);
+
+S1_18andout := AND(P19,P18);
+S1_18orout := OR(AND(G18,P19),G19);
+
+S1_19andout := AND(P20,P19);
+S1_19orout := OR(AND(G19,P20),G20);
+
+S1_20andout := AND(P21,P20);
+S1_20orout := OR(AND(G20,P21),G21);
+
+S1_21andout := AND(P22,P21);
+S1_21orout := OR(AND(G21,P22),G22);
+
+S1_22andout := AND(P23,P22);
+S1_22orout := OR(AND(G22,P23),G23);
+
+S1_23andout := AND(P24,P23);
+S1_23orout := OR(AND(G23,P24),G24);
+
+S1_24andout := AND(P25,P24);
+S1_24orout := OR(AND(G24,P25),G25);
+
+S1_25andout := AND(P26,P25);
+S1_25orout := OR(AND(G25,P26),G26);
+
+S1_26andout := AND(P27,P26);
+S1_26orout := OR(AND(G26,P27),G27);
+
+S1_27andout := AND(P28,P27);
+S1_27orout := OR(AND(G27,P28),G28);
+
+S1_28andout := AND(P29,P28);
+S1_28orout := OR(AND(G28,P29),G29);
+
+S1_29andout := AND(P30,P29);
+S1_29orout := OR(AND(G29,P30),G30);
+
+S2_0andout := AND(S1_2andout,S1_0andout);
+S2_0orout := OR(AND(S1_0orout,S1_2andout),S1_2orout);
+
+S2_1andout := AND(S1_3andout,S1_1andout);
+S2_1orout := OR(AND(S1_1orout,S1_3andout),S1_3orout);
+
+S2_2andout := AND(S1_4andout,S1_2andout);
+S2_2orout := OR(AND(S1_2orout,S1_4andout),S1_4orout);
+
+S2_3andout := AND(S1_5andout,S1_3andout);
+S2_3orout := OR(AND(S1_3orout,S1_5andout),S1_5orout);
+
+S2_4andout := AND(S1_6andout,S1_4andout);
+S2_4orout := OR(AND(S1_4orout,S1_6andout),S1_6orout);
+
+S2_5andout := AND(S1_7andout,S1_5andout);
+S2_5orout := OR(AND(S1_5orout,S1_7andout),S1_7orout);
+
+S2_6andout := AND(S1_8andout,S1_6andout);
+S2_6orout := OR(AND(S1_6orout,S1_8andout),S1_8orout);
+
+S2_7andout := AND(S1_9andout,S1_7andout);
+S2_7orout := OR(AND(S1_7orout,S1_9andout),S1_9orout);
+
+S2_8andout := AND(S1_10andout,S1_8andout);
+S2_8orout := OR(AND(S1_8orout,S1_10andout),S1_10orout);
+
+S2_9andout := AND(S1_11andout,S1_9andout);
+S2_9orout := OR(AND(S1_9orout,S1_11andout),S1_11orout);
+
+S2_10andout := AND(S1_12andout,S1_10andout);
+S2_10orout := OR(AND(S1_10orout,S1_12andout),S1_12orout);
+
+S2_11andout := AND(S1_13andout,S1_11andout);
+S2_11orout := OR(AND(S1_11orout,S1_13andout),S1_13orout);
+
+S2_12andout := AND(S1_14andout,S1_12andout);
+S2_12orout := OR(AND(S1_12orout,S1_14andout),S1_14orout);
+
+S2_13andout := AND(S1_15andout,S1_13andout);
+S2_13orout := OR(AND(S1_13orout,S1_15andout),S1_15orout);
+
+S2_14andout := AND(S1_16andout,S1_14andout);
+S2_14orout := OR(AND(S1_14orout,S1_16andout),S1_16orout);
+
+S2_15andout := AND(S1_17andout,S1_15andout);
+S2_15orout := OR(AND(S1_15orout,S1_17andout),S1_17orout);
+
+S2_16andout := AND(S1_18andout,S1_16andout);
+S2_16orout := OR(AND(S1_16orout,S1_18andout),S1_18orout);
+
+S2_17andout := AND(S1_19andout,S1_17andout);
+S2_17orout := OR(AND(S1_17orout,S1_19andout),S1_19orout);
+
+S2_18andout := AND(S1_20andout,S1_18andout);
+S2_18orout := OR(AND(S1_18orout,S1_20andout),S1_20orout);
+
+S2_19andout := AND(S1_21andout,S1_19andout);
+S2_19orout := OR(AND(S1_19orout,S1_21andout),S1_21orout);
+
+S2_20andout := AND(S1_22andout,S1_20andout);
+S2_20orout := OR(AND(S1_20orout,S1_22andout),S1_22orout);
+
+S2_21andout := AND(S1_23andout,S1_21andout);
+S2_21orout := OR(AND(S1_21orout,S1_23andout),S1_23orout);
+
+S2_22andout := AND(S1_24andout,S1_22andout);
+S2_22orout := OR(AND(S1_22orout,S1_24andout),S1_24orout);
+
+S2_23andout := AND(S1_25andout,S1_23andout);
+S2_23orout := OR(AND(S1_23orout,S1_25andout),S1_25orout);
+
+S2_24andout := AND(S1_26andout,S1_24andout);
+S2_24orout := OR(AND(S1_24orout,S1_26andout),S1_26orout);
+
+S2_25andout := AND(S1_27andout,S1_25andout);
+S2_25orout := OR(AND(S1_25orout,S1_27andout),S1_27orout);
+
+S2_26andout := AND(S1_28andout,S1_26andout);
+S2_26orout := OR(AND(S1_26orout,S1_28andout),S1_28orout);
+
+S2_27andout := AND(S1_29andout,S1_27andout);
+S2_27orout := OR(AND(S1_27orout,S1_29andout),S1_29orout);
+
+S3_0andout := AND(S2_4andout,S2_0andout);
+S3_0orout := OR(AND(S2_0orout,S2_4andout),S2_4orout);
+
+S3_1andout := AND(S2_5andout,S2_1andout);
+S3_1orout := OR(AND(S2_1orout,S2_5andout),S2_5orout);
+
+S3_2andout := AND(S2_6andout,S2_2andout);
+S3_2orout := OR(AND(S2_2orout,S2_6andout),S2_6orout);
+
+S3_3andout := AND(S2_7andout,S2_3andout);
+S3_3orout := OR(AND(S2_3orout,S2_7andout),S2_7orout);
+
+S3_4andout := AND(S2_8andout,S2_4andout);
+S3_4orout := OR(AND(S2_4orout,S2_8andout),S2_8orout);
+
+S3_5andout := AND(S2_9andout,S2_5andout);
+S3_5orout := OR(AND(S2_5orout,S2_9andout),S2_9orout);
+
+S3_6andout := AND(S2_10andout,S2_6andout);
+S3_6orout := OR(AND(S2_6orout,S2_10andout),S2_10orout);
+
+S3_7andout := AND(S2_11andout,S2_7andout);
+S3_7orout := OR(AND(S2_7orout,S2_11andout),S2_11orout);
+
+S3_8andout := AND(S2_12andout,S2_8andout);
+S3_8orout := OR(AND(S2_8orout,S2_12andout),S2_12orout);
+
+S3_9andout := AND(S2_13andout,S2_9andout);
+S3_9orout := OR(AND(S2_9orout,S2_13andout),S2_13orout);
+
+S3_10andout := AND(S2_14andout,S2_10andout);
+S3_10orout := OR(AND(S2_10orout,S2_14andout),S2_14orout);
+
+S3_11andout := AND(S2_15andout,S2_11andout);
+S3_11orout := OR(AND(S2_11orout,S2_15andout),S2_15orout);
+
+S3_12andout := AND(S2_16andout,S2_12andout);
+S3_12orout := OR(AND(S2_12orout,S2_16andout),S2_16orout);
+
+S3_13andout := AND(S2_17andout,S2_13andout);
+S3_13orout := OR(AND(S2_13orout,S2_17andout),S2_17orout);
+
+S3_14andout := AND(S2_18andout,S2_14andout);
+S3_14orout := OR(AND(S2_14orout,S2_18andout),S2_18orout);
+
+S3_15andout := AND(S2_19andout,S2_15andout);
+S3_15orout := OR(AND(S2_15orout,S2_19andout),S2_19orout);
+
+S3_16andout := AND(S2_20andout,S2_16andout);
+S3_16orout := OR(AND(S2_16orout,S2_20andout),S2_20orout);
+
+S3_17andout := AND(S2_21andout,S2_17andout);
+S3_17orout := OR(AND(S2_17orout,S2_21andout),S2_21orout);
+
+S3_18andout := AND(S2_22andout,S2_18andout);
+S3_18orout := OR(AND(S2_18orout,S2_22andout),S2_22orout);
+
+S3_19andout := AND(S2_23andout,S2_19andout);
+S3_19orout := OR(AND(S2_19orout,S2_23andout),S2_23orout);
+
+S3_20andout := AND(S2_24andout,S2_20andout);
+S3_20orout := OR(AND(S2_20orout,S2_24andout),S2_24orout);
+
+S3_21andout := AND(S2_25andout,S2_21andout);
+S3_21orout := OR(AND(S2_21orout,S2_25andout),S2_25orout);
+
+S3_22andout := AND(S2_26andout,S2_22andout);
+S3_22orout := OR(AND(S2_22orout,S2_26andout),S2_26orout);
+
+S3_23andout := AND(S2_27andout,S2_23andout);
+S3_23orout := OR(AND(S2_23orout,S2_27andout),S2_27orout);
+
+S4_0andout := AND(S3_8andout,S3_0andout);
+S4_0orout := OR(AND(S3_0orout,S3_8andout),S3_8orout);
+
+S4_1andout := AND(S3_9andout,S3_1andout);
+S4_1orout := OR(AND(S3_1orout,S3_9andout),S3_9orout);
+
+S4_2andout := AND(S3_10andout,S3_2andout);
+S4_2orout := OR(AND(S3_2orout,S3_10andout),S3_10orout);
+
+S4_3andout := AND(S3_11andout,S3_3andout);
+S4_3orout := OR(AND(S3_3orout,S3_11andout),S3_11orout);
+
+S4_4andout := AND(S3_12andout,S3_4andout);
+S4_4orout := OR(AND(S3_4orout,S3_12andout),S3_12orout);
+
+S4_5andout := AND(S3_13andout,S3_5andout);
+S4_5orout := OR(AND(S3_5orout,S3_13andout),S3_13orout);
+
+S4_6andout := AND(S3_14andout,S3_6andout);
+S4_6orout := OR(AND(S3_6orout,S3_14andout),S3_14orout);
+
+S4_7andout := AND(S3_15andout,S3_7andout);
+S4_7orout := OR(AND(S3_7orout,S3_15andout),S3_15orout);
+
+S4_8andout := AND(S3_16andout,S3_8andout);
+S4_8orout := OR(AND(S3_8orout,S3_16andout),S3_16orout);
+
+S4_9andout := AND(S3_17andout,S3_9andout);
+S4_9orout := OR(AND(S3_9orout,S3_17andout),S3_17orout);
+
+S4_10andout := AND(S3_18andout,S3_10andout);
+S4_10orout := OR(AND(S3_10orout,S3_18andout),S3_18orout);
+
+S4_11andout := AND(S3_19andout,S3_11andout);
+S4_11orout := OR(AND(S3_11orout,S3_19andout),S3_19orout);
+
+S4_12andout := AND(S3_20andout,S3_12andout);
+S4_12orout := OR(AND(S3_12orout,S3_20andout),S3_20orout);
+
+S4_13andout := AND(S3_21andout,S3_13andout);
+S4_13orout := OR(AND(S3_13orout,S3_21andout),S3_21orout);
+
+S4_14andout := AND(S3_22andout,S3_14andout);
+S4_14orout := OR(AND(S3_14orout,S3_22andout),S3_22orout);
+
+S4_15andout := AND(S3_23andout,S3_15andout);
+S4_15orout := OR(AND(S3_15orout,S3_23andout),S3_23orout);
+
+S1_left := OR(AND(P0,ALUFN0),G0);
+
+S2_left := OR(AND(S1_0andout,ALUFN0),S1_0orout);
+
+S3_left := OR(AND(S1_1andout,S1_left),S1_1orout);
+
+S4_left := OR(AND(S2_0andout,ALUFN0),S2_0orout);
+
+S5_left := OR(AND(S2_1andout,S1_left),S2_1orout);
+
+S6_left := OR(AND(S2_2andout,S2_left),S2_2orout);
+
+S7_left := OR(AND(S2_3andout,S3_left),S2_3orout);
+
+S8_left := OR(AND(S3_0andout,ALUFN0),S3_0orout);
+
+S9_left := OR(AND(S3_1andout,S1_left),S3_1orout);
+
+S10_left := OR(AND(S3_2andout,S2_left),S3_2orout);
+
+S11_left := OR(AND(S3_3andout,S3_left),S3_3orout);
+
+S12_left := OR(AND(S3_4andout,S4_left),S3_4orout);
+
+S13_left := OR(AND(S3_5andout,S5_left),S3_5orout);
+
+S14_left := OR(AND(S3_6andout,S6_left),S3_6orout);
+
+S15_left := OR(AND(S3_7andout,S7_left),S3_7orout);
+
+S16_left := OR(AND(S4_0andout,ALUFN0),S4_0orout);
+
+S17_left := OR(AND(S4_1andout,S1_left),S4_1orout);
+
+S18_left := OR(AND(S4_2andout,S2_left),S4_2orout);
+
+S19_left := OR(AND(S4_3andout,S3_left),S4_3orout);
+
+S20_left := OR(AND(S4_4andout,S4_left),S4_4orout);
+
+S21_left := OR(AND(S4_5andout,S5_left),S4_5orout);
+
+S22_left := OR(AND(S4_6andout,S6_left),S4_6orout);
+
+S23_left := OR(AND(S4_7andout,S7_left),S4_7orout);
+
+S24_left := OR(AND(S4_8andout,S8_left),S4_8orout);
+
+S25_left := OR(AND(S4_9andout,S9_left),S4_9orout);
+
+S26_left := OR(AND(S4_10andout,S10_left),S4_10orout);
+
+S27_left := OR(AND(S4_11andout,S11_left),S4_11orout);
+
+S28_left := OR(AND(S4_12andout,S12_left),S4_12orout);
+
+S29_left := OR(AND(S4_13andout,S13_left),S4_13orout);
+
+S30_left := OR(AND(S4_14andout,S14_left),S4_14orout);
+
+S31_left := OR(AND(S4_15andout,S15_left),S4_15orout);
+
+S_optimised0 := ODD(P0,ALUFN0);
+
+S_optimised1 := ODD(P1,S1_left);
+
+S_optimised2 := ODD(P2,S2_left);
+
+S_optimised3 := ODD(P3,S3_left);
+
+S_optimised4 := ODD(P4,S4_left);
+
+S_optimised5 := ODD(P5,S5_left);
+
+S_optimised6 := ODD(P6,S6_left);
+
+S_optimised7 := ODD(P7,S7_left);
+
+S_optimised8 := ODD(P8,S8_left);
+
+S_optimised9 := ODD(P9,S9_left);
+
+S_optimised10 := ODD(P10,S10_left);
+
+S_optimised11 := ODD(P11,S11_left);
+
+S_optimised12 := ODD(P12,S12_left);
+
+S_optimised13 := ODD(P13,S13_left);
+
+S_optimised14 := ODD(P14,S14_left);
+
+S_optimised15 := ODD(P15,S15_left);
+
+S_optimised16 := ODD(P16,S16_left);
+
+S_optimised17 := ODD(P17,S17_left);
+
+S_optimised18 := ODD(P18,S18_left);
+
+S_optimised19 := ODD(P19,S19_left);
+
+S_optimised20 := ODD(P20,S20_left);
+
+S_optimised21 := ODD(P21,S21_left);
+
+S_optimised22 := ODD(P22,S22_left);
+
+S_optimised23 := ODD(P23,S23_left);
+
+S_optimised24 := ODD(P24,S24_left);
+
+S_optimised25 := ODD(P25,S25_left);
+
+S_optimised26 := ODD(P26,S26_left);
+
+S_optimised27 := ODD(P27,S27_left);
+
+S_optimised28 := ODD(P28,S28_left);
+
+S_optimised29 := ODD(P29,S29_left);
+
+S_optimised30 := ODD(P30,S30_left);
+
+S_optimised31 := ODD(P31,S31_left);
+
+Z := ODD(S31,S_optimised31);
+ASSIGN Z;
